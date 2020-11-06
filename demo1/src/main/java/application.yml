@@ -1,0 +1,14 @@
+server:
+  port: 8090
+management:
+  endpoint:
+    health:
+      group:
+        disk:
+          include: diskSpace
+          show-components: always
+          show-details: always
+        ping:
+          include: ping, diskSpace
+          show-components: always
+          show-details: always
